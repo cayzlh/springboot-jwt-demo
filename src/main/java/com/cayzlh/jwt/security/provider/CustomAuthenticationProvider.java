@@ -77,4 +77,9 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         return authentication.equals(UsernamePasswordAuthenticationToken.class);
     }
 
+	public static void main(String[] args) {
+		String encodePassword = DigestUtils.md5DigestAsHex(("Aa262535636@@").getBytes());
+		System.out.println(encodePassword);
+	}
+
 }
